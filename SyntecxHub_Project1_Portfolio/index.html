@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafsa Shahid - Portfolio</title>
+    <meta name="author" content="Hafsa Shahid">
+    <meta name="copyright" content="© 2025 Hafsa Shahid. All rights reserved.">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Disable source view by right click -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    <style>
+        ::selection { background: #fff; color: #000; }
+        body::after {
+            content: "© 2025 Hafsa Shahid";
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+            font-size: 10px;
+            opacity: 0.6;
+        }
+    </style>
+
+
+</head>
+<body>
+    
+    <!-- Navbar -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="logo">
+                <h2 class="logo-title"><strong>hafsa.</strong></h2>
+                <ul class="navlinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="nav-toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+            
+        </nav>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content container">
+
+            <span class="hero-role">Frontend Developer</span>
+
+            <h1 class="hero-name">Hafsa Shahid</h1>
+
+            <p class="hero-description">I build clean, responsive web interfaces with a strong focus on structure and usability.</p>
+
+            <div class="hero-actions">
+                <a href="#projects" class="btn primary-btn">View Projects</a>
+                <a href="./assets/resume.pdf" class="btn secondary-btn" target="_blank">Download Resume</a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-content container">
+
+            <h2 class="section-title">About Me</h2>
+
+            <p>
+                I’m a frontend developer focused on building clean, responsive
+                web interfaces using HTML, CSS, and JavaScript. I enjoy working
+                on real projects where structure, clarity, and usability matter.
+            </p>
+    
+            <p>
+                Alongside my project work and internships, I’m currently enrolled
+                in a structured MERN Stack program, where I’m strengthening my
+                frontend fundamentals and gradually moving toward modern frontend
+                development.
+            </p>
+    
+            <p>
+                I believe in learning by building, improving step by step, and
+                keeping my work practical rather than overly complex.
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="skills-content container">
+
+            <h2 class="section-title">Skills</h2>
+
+            <!-- Core Frontend -->
+            <div class="skills-group">
+                <h3>Core Frontend</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-brands fa-html5"></i> HTML5</li>
+                    <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+                    <li><i class="fa-brands fa-js"></i> JavaScript (Es6)</li>
+                    <li><i class="fa-brands fa-react"></i> React.js</li>
+                    <li><i class="fa-solid fa-mobile-screen"></i> Responsive Design</li>
+                </ul>
+            </div>
+
+            <!-- Libraries And Animations -->
+            <div class="skills-group">
+                <h3>Libraries & Animations</h3>
+                <ul class="skills-list">
+                  <li><i class="fa-brands fa-bootstrap"></i> Bootstrap</li>
+                  <li><i class="fa-solid fa-wand-magic-sparkles"></i> GSAP Animations</li>
+                  <li><i class="fa-solid fa-plug"></i> API Integration (Dummy APIs)</li>
+                </ul>
+            </div>
+
+            <!-- Tools & Workflow -->
+            <div class="skills-group">
+                <h3>Tools & Workflow</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-brands fa-git-alt"></i> Git & GitHub (Advanced)</li>
+                    <li><i class="fa-solid fa-cloud-arrow-up"></i> Netlify</li>
+                    <li><i class="fa-solid fa-code"></i> VS Code</li>
+                    <li><i class="fa-solid fa-icons"></i> Font Awesome</li>
+                </ul>
+            </div>
+
+            <!-- Design Skills -->
+            <div class="skills-group">
+                <h3>Design & Visual</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-solid fa-pen-nib"></i> Adobe Illustrator</li>
+                    <li><i class="fa-solid fa-image"></i> Adobe Photoshop</li>
+                    <li><i class="fa-solid fa-palette"></i> Canva</li>
+                </ul>
+            </div>
+
+            <!-- Learning -->
+            <div class="skills-group">
+                <h3>Currently Learning</h3>
+                <ul class="skills-list">
+                    <li><i class="fa-brands fa-react"></i> Advanced React Concepts</li>
+                    <li><i class="fa-solid fa-database"></i> Firebase</li>
+                    <li><i class="fa-solid fa-code"></i> TypeScript (Practice Phase)</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="projects-content container">
+
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle"> A selection of projects showcasing my frontend skills and hands-on experience.</p>
+
+            <div class="projects-grid">
+
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <img src="./assets/projects/pixora.png" alt="Pixora Image Gallery">
+                    <div class="project-overlay">
+                        <h3>Pixora Image Gallery</h3>
+                        <p>Interactive image gallery with category filters and clean UI.</p>
+                        <div class="project-links">
+                            <a href="https://pixora-image-gallery.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/HAFSA-SHAHID-28/CodeAlpha_Tasks/tree/482009b79d98fef3c6c8d608f8b1bb9c1e3d8d11/CodeAlpha_ImageGallery" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <img src="./assets/projects/calcora.png" alt="Calcora Calculator">
+                    <div class="project-overlay">
+                        <h3>Calcora Calculator</h3>
+                        <p>Smart calculator with light and dark mode toggle.</p>
+                        <div class="project-links">
+                            <a href="https://calcora-smartcalculator.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/HAFSA-SHAHID-28/CodeAlpha_Tasks/tree/482009b79d98fef3c6c8d608f8b1bb9c1e3d8d11/CodeAlpha_Calculator" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <img src="./assets/projects/neuronspark.png" alt="NeuronSpark Quiz">
+                    <div class="project-overlay">
+                        <h3>NeuronSpark Quiz</h3>
+                        <p>Interactive quiz application with engaging UI.</p>
+                        <div class="project-links">
+                            <a href="https://neuron-spark.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/HAFSA-SHAHID-28/quiz-application.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card">
+                    <img src="./assets/projects/tasknova.png" alt="TaskNova Todo App">
+                    <div class="project-overlay">
+                        <h3>TaskNova</h3>
+                        <p>Functional task and todo app built with JavaScript.</p>
+                        <div class="project-links">
+                            <a href="https://task-nova-js.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/HAFSA-SHAHID-28/todo-application.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card">
+                    <img src="./assets/projects/cashora.png" alt="Cashora ATM">
+                    <div class="project-overlay">
+                        <h3>Cashora ATM</h3>
+                        <p>ATM simulation demonstrating JavaScript logic and flow.</p>
+                        <div class="project-links">
+                            <a href="https://cashoora.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/HAFSA-SHAHID-28/atm-assignment.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Project 6 -->
+                <div class="project-card">
+                    <img src="./assets/projects/charity.png" alt="Charity Website">
+                    <div class="project-overlay">
+                        <h3>Charity Website</h3>
+                        <p>Multi-page responsive website built using HTML and CSS.</p>
+                        <div class="project-links">
+                            <a href="https://chariity-website.netlify.app/" target="_blank">Live</a>
+                            <a href="https://github.com/HAFSA-SHAHID-28/charity-website.git" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects-footer">
+                <a href="https://github.com/HAFSA-SHAHID-28" target="_blank" class="btn secondary-btn github-btn">
+                    <i class="fa-brands fa-github"></i>View More on GitHub
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="experience-content container">
+
+            <h2 class="section-title">Experience</h2>
+
+            <!-- Internship 1 -->
+            <div class="experience-card">
+                <h3>Frontend Developer Intern</h3>
+                <span class="experience-company">
+                    SyntecxHub · Ongoing
+                </span>
+                <ul class="experience-points">
+                    <li>Working on frontend projects using HTML, CSS, and JavaScript.</li>
+                    <li>Building UI components and implementing interactive features.</li>
+                    <li>Collaborating on assigned tasks and improving code structure.</li>
+                </ul>
+            </div>
+
+
+            <!-- Internship 2 -->
+            <div class="experience-card">
+                <h3>Frontend Developer Intern</h3>
+                <span class="experience-company">
+                    CodeAlpha · Dec 2025 - Jan 2026
+                </span>
+                <ul class="experience-points">
+                    <li>Built Calculator App and Image Gallery with clean, responsive UI.</li>
+                    <li>Used HTML, CSS, and JavaScript to implement functionality and smooth user interactions.</li>
+                    <li>Completed tasks remotely and on time, following best coding practices.</li>
+                    <li>Gained hands-on experience in frontend development, debugging, and UI design.</li>
+                </ul>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <!-- Education Section -->
+    <section class="education" id="education">
+        <div class="education-content container">
+
+            <h2 class="section-title">Education</h2>
+
+            <!-- Academic Education 1 -->
+            <div class="education-card">
+                <h3>Intermediate (Computer Science)</h3>
+                <h4>Government Girls Degree College, Clifton</h4>
+                <span class="education-duration">
+                    2024 - current
+                </span>
+                <p>
+                    Studied key subjects including Computer, Physics, and Mathematics. 
+                    Participated in a software competition during the 1st year, creating logos and posters using graphic design skills, and won 1st place trophy.
+                </p>
+                </div>
+
+            <!-- Academic Education 2 -->
+            <div class="education-card">
+                <h3>Matriculation (Science)</h3>
+                <h4>Zeal Public School, DHA Phase#2, Karachi.</h4>
+                <span class="education-duration">
+                    2011 - 2024
+                </span>
+                <p>Completed Science-focused curriculum including Mathematics, Physics, Chemistry, and Biology along with compulsory subjects. Developed foundational analytical and problem-solving skills.</p>
+            </div>
+
+            <!--Course 1 -->
+            <div class="education-card">
+                <h3>MERN Stack Development</h3>
+                <h4>Saylani Mass IT Training (SMIT)</h4>
+                <span class="education-duration">
+                    2025 - ongoing
+                </span>
+                <p>
+                    Learned frontend development including HTML, CSS, Bootstrap, JavaScript (ES5 & ES6), GSAP, React, TypeScript, Firebase, and Netlify deployment. 
+                    Currently expanding skills in Tailwind CSS, Node.js, Express, and MongoDB. Practical projects included in project section.
+                </p>
+            </div>
+
+            <!--Course 2 -->
+            <div class="education-card">
+                <h3>Graphics Designing Essential</h3>
+                <h4>Bano Qabil (BQ)</h4>
+                <span class="education-duration">
+                    Sep 2024 - Dec 2024
+                </span>
+                <p>Completed 3-month intensive course covering Adobe Illustrator, Photoshop, and Canva. Created logos, mockups, and branding materials, enhancing UI/UX and design fundamentals.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Certificates Section -->
+    <section class="certificates" id="certificates">
+        <div class="certificates-content container">
+
+            <h2 class="section-title">Certificates</h2>
+            <p class="section-subtitle">Recognized training programs and professional learning achievements.</p>
+
+            <div class="certificate-grid">
+
+                <!-- Certificate 1 -->
+                <div class="certificate-card">
+                    <img src="./assets/logos/smit.png" alt="SMIT Logo">
+                    <h3>FemHack - 2025 (Hackathon)</h3>
+                    <span class="certificate-org">Saylani Mass IT Training (SMIT)</span>
+                    <span class="certificate-duration">April 2025</span>
+                    <a href="./assets/certificate/Hackathon.pdf" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+
+                <!-- Certificate 2 -->
+                <div class="certificate-card">
+                    <img src="./assets/logos/banoqabil.png" alt="Bano Qabil Logo">
+                    <h3>Graphic Design Essentials</h3>
+                    <span class="certificate-org">Bano Qabil</span>
+                    <span class="certificate-duration">June 2025</span>
+                    <a href="./assets/certificate/banoqabil.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+
+                <!-- Certificate 3 -->
+                <div class="certificate-card">
+                    <img src="./assets/logos/codealpha.png" alt="Code Alpha Logo">
+                    <h3>Frontend Developer Internship Certificate</h3>
+                    <span class="certificate-org">Code Alpha</span>
+                    <span class="certificate-duration">January 2026</span>
+                    <a href="./assets/certificate/codealpha.pdf" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+
+                <!-- Certificate 4 -->
+                <div class="certificate-card">
+                    <img src="./assets/logos/sololearn.png" alt="Sololearn Logo">
+                    <h3>Web Development</h3>
+                    <span class="certificate-org">Sololearn</span>
+                    <span class="certificate-duration">July 2024</span>
+                    <a href="./assets/certificate/webdev.png" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+
+                <!-- Certificate 5 -->
+                <div class="certificate-card">
+                    <img src="./assets/logos/sololearn.png" alt="Sololearn Logo">
+                    <h3>Introduction to JavaScript</h3>
+                    <span class="certificate-org">Sololearn</span>
+                    <span class="certificate-duration">November 2025</span>
+                    <a href="./assets/certificate/javascript.jpg" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+
+                <!-- Certificate 6 -->
+                <div class="certificate-card">
+                    <img src="./assets/logos/sololearn.png" alt="Sololearn Logo">
+                    <h3>Introduction to HTML</h3>
+                    <span class="certificate-org">Sololearn</span>
+                    <span class="certificate-duration">October 2023</span>
+                    <a href="./assets/certificate/html.png" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+
+                <!-- Certificate 7 -->
+                <div class="certificate-card">
+                    <img src="./assets/logos/hplife.png" alt="Hp Life Logo">
+                    <h3>Introduction To Cybersecurity Awareness</h3>
+                    <span class="certificate-org">Hp Life</span>
+                    <span class="certificate-duration">November 2024</span>
+                    <a href="./assets/certificate/cybersecurity.pdf" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+
+                <!-- Certificate 8 -->
+                <div class="certificate-card">
+                    <img src="./assets/logos/hplife.png" alt="Hp Life Logo">
+                    <h3>AI For Beginners</h3>
+                    <span class="certificate-org">Hp Life</span>
+                    <span class="certificate-duration">November 2024</span>
+                    <a href="./assets/certificate/AI-for-beginners.pdf" target="_blank" class="certificate-link">View Certificate</a>
+                </div>
+
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="contact-content container">
+
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Have a project, opportunity, or question? Feel free to reach out.</p>
+
+           <div class="contact-wrapper">
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <p><i class="fa-solid fa-envelope"></i> 
+                        <a href="mailto:hafsa.shahid.282007@email.com">
+                            hafsa.shahid.282007@email.com
+                        </a></p>
+                    <p><i class="fa-brands fa-github"></i> 
+                        <a href="https://github.com/HAFSA-SHAHID-28" target="_blank">
+                            github.com/HAFSA-SHAHID-28
+                        </a>
+                    </p>
+                    <p>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/hafsa-shahid-b43339339/" target="_blank">
+                            linkedin.com/in/hafsa-shahid
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                    <p id="form-status"></p>
+                </form>
+
+           </div>
+
+        </div>
+    </section>
+
+    
+    <!-- email js cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+    <!-- custom js -->
+    <script src="./index.js"></script>
+
+</body>
+</html>
