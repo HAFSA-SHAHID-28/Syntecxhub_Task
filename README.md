@@ -38,6 +38,31 @@ HTML5 | CSS3 | JavaScript (ES6) | Font Awesome | EmailJS | Netlify (Deployment)
 
 ---
 
+### 2. **Donevia | Smart To-Do App** 📝✨
+**Live Demo:**  
+👉 https://donevia-todo-app.netlify.app/
+
+**Description:**  
+Donevia is a modern, light-themed, user-friendly to-do application built to help users plan, track, and complete tasks efficiently. 
+It emphasizes clean UI, intuitive interactions, local data persistence, and responsive layout, unlike basic to-do apps.
+
+**Key Features:**
+- Add, delete, and mark tasks as completed
+- Filter tasks: All / Active / Completed
+- Persist tasks using localStorage
+- Minimal, light theme with gradient headers and soft shadows
+- Responsive layout for mobile and desktop screens
+- Interactive hover effects on tasks and buttons
+- Clear completed tasks with a single click
+- Elegant task counter showing active tasks
+- Trash icon for deletion instead of basic cross
+  
+**Technologies Used:**  
+HTML5 | CSS3 | JavaScript (ES6) | Font Awesome | localStorage | Netlify (Deployment)
+
+---
+
+
 ## 🛠️ Skills Demonstrated
 - **Frontend Development:** Semantic HTML, CSS Grid, Flexbox, responsive layouts  
 - **UI/UX Design:** Modern layout structure, spacing, color harmony, visual hierarchy  
