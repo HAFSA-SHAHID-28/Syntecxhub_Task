@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabvia | Smart Tabbed Interface</title>
+    <meta name="author" content="Hafsa Shahid">
+    <meta name="copyright" content="© 2025 Hafsa Shahid. All rights reserved.">
+
+    <!--title logo -->
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./assets/logo2.png"
+      media="(prefers-color-scheme: light)">
+
+    <link rel="icon" type="image/png" sizes="32x32"
+      href="./assets/logo1.png"
+      media="(prefers-color-scheme: dark)">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- Disable source view by right click -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    <style>
+        ::selection { background: #fff; color: #000; }
+        body::after {
+            content: "© 2025 Hafsa Shahid";
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+            font-size: 10px;
+            opacity: 0.6;
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to <span class="highlight">Tabvia</span></h1>
+            <p>Interactive, clean, and responsive tabbed content for your projects</p>
+            <a href="#tabs" class="cta-btn">Explore Tabs</a>
+        </div>
+    </section>
+
+    <!-- Tabs Section -->
+    <section id="tabs" class="tabs-container">
+        <div class="tabs-header">
+            <button class="tab-btn active" data-tab="overview">Overview</button>
+            <button class="tab-btn" data-tab="features">Features</button>
+            <button class="tab-btn" data-tab="contact">Contact</button>
+        </div>
+
+        <div class="tab-contents">
+            <div class="tab-content active" id="overview">
+                <h2>Overview</h2>
+                <p>Tabvia is a modern, responsive tabbed content section designed to organize your content in an engaging way, perfect for portfolios or apps.</p>
+            </div>
+            <div class="tab-content" id="features">
+                <h2>Features</h2>
+                <ul>
+                    <li>Dynamic tab switching with smooth fade animation</li>
+                    <li>Active tab highlighting with gradient underline</li>
+                    <li>Fully responsive layout for all devices</li>
+                    <li>Clean hero section integration</li>
+                    <li>Lightweight and fast performance</li>
+                </ul>
+            </div>
+            <div class="tab-content" id="contact">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:hafsa.shahid.282007@gmail.com">hafsa.shahid.282007@gmail.com</a></p>
+                <p>Portfolio: <a href="https://hafsa-portfoolio.netlify.app/" target="_blank">hafsa-portfoolio.netlify.app</a></p>
+                <p>LinkedIn: <a href="https://www.linkedin.com/in/hafsa-shahid-b43339339/" target="_blank">Hafsa Shahid</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- gsap cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+
+    <!-- custom js -->
+     <script src="./index.js"></script>
+    
+</body>
+</html>

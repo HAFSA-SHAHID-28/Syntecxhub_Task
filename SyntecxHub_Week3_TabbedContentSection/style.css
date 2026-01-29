@@ -1,0 +1,268 @@
+:root {
+  --primary: #6b8f71;      
+  --accent: #b7c4a3;      
+  --bg-main: linear-gradient(135deg, #f3efe6, #e4eadf);
+  --panel-bg: rgba(255, 255, 255, 0.35);
+  --text-dark: #2e2e2e;
+  --text-muted: #5f6f63;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+
+body {
+  background: linear-gradient(135deg, #f3efe6, #c5edbb);
+  color: var(--text-dark);
+  min-height: 100vh;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(0,0,0,0.04) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  opacity: 0.15;
+  pointer-events: none;
+}
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 600px;
+}
+
+.hero-content h1 {
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.highlight {
+  color: var(--primary);
+  position: relative;
+}
+
+.highlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 0;
+  height: 5px;
+  background: var(--accent);
+  transition: 0.4s ease;
+}
+
+.highlight:hover::after {
+  width: 100%;
+}
+
+.hero-content p {
+  font-size: 20px;
+  margin: 1.2rem 0 2rem;
+  color: var(--text-muted);
+}
+
+.cta-btn {
+  padding: 12px 30px;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #6b8f71, #7fa987);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.cta-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+  transform: translateX(-100%);
+}
+
+.cta-btn:hover::after {
+  transform: translateX(100%);
+  transition: 0.6s ease;
+}
+
+.cta-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 35px rgba(0,0,0,0.18);
+}
+
+.cta-btn:active {
+  transform: translateY(0);
+}
+
+
+.tabs-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 4rem 1.5rem 6rem;
+}
+
+.tabs-header {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: transparent;
+  border: 2px solid var(--primary);
+  color: var(--primary);
+  padding: 10px 22px;
+  font-size: 18px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.tab-contents {
+  background: var(--panel-bg);
+  backdrop-filter: blur(18px);
+  border-radius: 20px;
+  padding: 2.5rem;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.1);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+  animation: fadeUp 0.4s ease;
+}
+
+.tab-content h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.tab-content ul li {
+  margin-bottom: 0.6rem;
+  color: var(--text-muted);
+}
+
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#contact p {
+  margin-bottom: 0.8rem;
+}
+
+#contact a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  padding-left: 22px;
+}
+
+/* icon */
+#contact a::before {
+  content: "↗";
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.6;
+  transition: transform 0.3s ease;
+}
+
+#contact a::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background: var(--accent);
+  transition: width 0.3s ease;
+}
+
+#contact a:hover::after {
+  width: calc(100% - 22px);
+}
+
+#contact a:hover::before {
+  transform: translateX(3px);
+}
+
+
+
+@media (max-width: 700px) {
+  .hero-content h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .highlight::after {
+    height: 3px;
+}
+
+  .tab-btn {
+  font-size: 14px;
+}
+
+#contact a {
+  display: block;
+  padding-left: 0px;
+  font-size: 15px;
+}
+
+#contact a::before {
+  content: "";
+}
+
+#contact a::after {
+  left: 0px;
+}
+}
