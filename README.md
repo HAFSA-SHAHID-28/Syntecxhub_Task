@@ -62,6 +62,31 @@ HTML5 | CSS3 | JavaScript (ES6) | Font Awesome | localStorage | Netlify (Deploym
 
 ---
 
+### 3. *Tabvia | Smart Tabbed Interface ** 🧩✨
+**Live Demo:**  
+👉 https://tabvia.netlify.app/
+
+**Description:**  
+Tabvia is a modern, interactive, and responsive tabbed content interface designed to present structured information in a clean and engaging way.
+Unlike basic tab components, Tabvia focuses on visual hierarchy, smooth transitions, micro-interactions, and real UI polish, making it suitable for portfolios, landing pages, and web apps.
+
+**Key Features:**
+- Tabbed content system with dynamic switching
+- Smooth fade & slide animations between tabs
+- Visually highlighted active tab with animated indicator
+- Hero-style landing section for strong first impression
+- Clean, modern UI with non-default color palette (no blue/purple/orange)
+- Styled call-to-action button with hover micro-interactions
+- Well-designed contact section with clickable links
+- Fully responsive layout for desktop, tablet, and mobile screens
+- Lightweight, fast, and beginner-friendly architecture
+  
+**Technologies Used:**  
+HTML5 | CSS3 | JavaScript (ES6) | Font Awesome | GSAP | Netlify (Deployment)
+
+---
+
+
 
 ## 🛠️ Skills Demonstrated
 - **Frontend Development:** Semantic HTML, CSS Grid, Flexbox, responsive layouts  
