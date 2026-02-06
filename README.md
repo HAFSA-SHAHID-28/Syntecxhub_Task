@@ -87,6 +87,28 @@ HTML5 | CSS3 | JavaScript (ES6) | Font Awesome | GSAP | Netlify (Deployment)
 ---
 
 
+### 4. *Lumina | Smart Theme Toggle* 🎨✨
+**Live Demo:**  
+👉 [https://lumina-smart-toggle.netlify.app/](https://lumina-smart-toggle.netlify.app/)
+
+**Description:**  
+Lumina is a premium, modern light/dark mode theme toggle system built to enhance user experience with seamless, smooth transitions.  
+Unlike basic toggles, Lumina focuses on **polished UI, elegant color schemes, responsive layout, and micro-interactions**, making it ideal for web apps, portfolios, and interactive landing pages.
+
+**Key Features:**
+- Fully functional light & dark mode toggle with smooth animation
+- User theme preference saved using localStorage for persistence
+- Elegant hero section with premium typography and highlight accents
+- Modern feature cards with hover effects, aligned layout, and soft shadows
+- Interactive toggle icon with rotation & subtle micro-interaction
+- Clean, stylish call-to-action buttons
+- Fully responsive design for desktop, tablet, and mobile screens
+- Lightweight, beginner-friendly architecture for fast deployment
+
+**Technologies Used:**  
+HTML5 | CSS3 | JavaScript (ES6) | Font Awesome | Netlify (Deployment)
+
+
 
 ## 🛠️ Skills Demonstrated
 - **Frontend Development:** Semantic HTML, CSS Grid, Flexbox, responsive layouts  
