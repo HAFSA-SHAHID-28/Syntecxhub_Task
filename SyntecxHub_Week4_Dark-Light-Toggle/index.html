@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumina | Smart Theme Toggle</title>
+
+    <!--title logo -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo2.png" media="(prefers-color-scheme: light)">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo1.png" media="(prefers-color-scheme: dark)">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./style.css">
+    
+    
+    <!-- Disable source view by right click -->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    <style>
+        ::selection { background: #fff; color: #000; }
+        body::after {
+            content: "© 2025 Hafsa Shahid";
+            position: fixed;
+            bottom: 5px;
+            right: 10px;
+            font-size: 10px;
+            opacity: 0.6;
+        }
+    </style>
+
+</head>
+
+<body>
+
+
+    <header class="hero">
+        <nav class="navbar">
+            <h2 class="logo">Lumina</h2>
+
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+        </nav>
+
+        <div class="hero-content">
+            <h1>
+                Experience <span class="highlight">Light</span> &
+                <span class="highlight">Dark</span> Mode
+                <br>Like Never Before
+            </h1>
+
+            <p>
+                Lumina is a smart, smooth, and modern theme toggle system
+                designed to enhance user experience with seamless transitions.
+            </p>
+
+            <a href="#preview" class="primary-btn">
+                See Preview
+            </a>
+        </div>
+    </header>
+
+    <section id="preview" class="preview">
+        <h2 class="section-title">Why Lumina?</h2>
+
+        <div class="card-grid">
+
+            <div class="feature-card">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <h3>Smart Theme Toggle</h3>
+                <p>
+                    Instantly switch between light and dark modes using a smooth,
+                    intuitive toggle button.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-floppy-disk"></i>
+                <h3>Persistent Preference</h3>
+                <p>
+                    User theme preference is saved using localStorage,
+                    ensuring consistency across sessions.
+                </p>
+            </div>
+
+            <div class="feature-card">
+                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                <h3>Smooth Transitions</h3>
+                <p>
+                    Elegant color transitions make the theme change feel
+                    natural and visually pleasing.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>
+            Built with ❤️ by <strong>Hafsa Shahid</strong>
+            <br>
+            Internship Task @ <span>SyntecxHub</span>
+        </p>
+    </footer>
+
+
+
+    <!-- custom js -->
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
